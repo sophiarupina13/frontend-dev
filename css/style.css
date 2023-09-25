@@ -1,0 +1,197 @@
+:root {
+    color: #142251;
+    --special-color: #989EB1;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background: #FFF;
+    width: 375px;
+    height: 3089px;
+}
+
+#bg1 {
+    width: 375px;
+    height: 750px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #F3F6F9;
+    position: relative;
+}
+
+.card {
+    width: 335px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+}
+
+.p-btn {
+    color: #213887;
+    position: relative;
+    left: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+}
+
+#p-btn1 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+}
+
+
+.p-btns {
+    position: relative;
+    top: -13px;
+    color: #142251;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: -1.6px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 90%; /* 18px */
+    letter-spacing: -0.8px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.56px;
+}
+
+.head2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+    letter-spacing: -0.6px;
+}
+
+.gray {
+    color: var(--special-color);
+}
+
+.gray1 {
+    color: var(--special-color);
+    font-size: 14px;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+}
+
+#gray2 {
+    width: 132px;
+    color: var(--special-color);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%; /* 15.6px */
+    letter-spacing: -0.24px;
+    text-decoration-line: underline;
+    position: relative;
+    bottom: -20px;
+    right: -15px;
+}
+
+#gray3 {
+    color: var(--special-color);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 100%; /* 12px */
+    letter-spacing: -0.48px;
+    position: relative;
+    bottom: 80px;
+    right: -319px;
+}
+
+#ftr-text {
+    width: 113px;
+    color: #213887;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%; /* 15.6px */
+    letter-spacing: -0.24px;
+    text-decoration-line: underline;
+    position: relative;
+    bottom: 24px;
+    right: -180px;
+}
+
+#menu {
+    position: relative;
+    top: 0px;
+    right: -190px;
+    flex-shrink: 0;
+    border: 0;
+    background-color:#FFF;
+}
+
+#logo {
+    width: 132px;
+    height: 29px;
+    flex-shrink: 0;
+    position: relative;
+    top: 9px;
+    left: 10px;
+}
+
+.button1 {
+    position: relative;
+    right: 20px;
+    left: 20px;
+    display: flex;
+    width: 335px;
+    height: 60px;
+    padding: 24px 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: rgba(33, 56, 135, 0.06);
+    border: 0;
+    
+}
+
+.button2 {
+    display: flex;
+    width: 275px;
+    height: 60px;
+    padding: 24px 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #142251;
+    border: 0;
+}
+
+.buttons {
+    display: flex;
+    height: 40px;
+    padding: 13px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 89px;
+    border: 1px solid;
+    border-color: #142251;
+}
