@@ -94,18 +94,15 @@ p {
 }
 
 .button1 {
-    position: relative;
     display: flex;
     width: 33.5rem;
     height: 6rem;
     padding: 2.4rem 1.7rem;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
     border-radius: 1.2rem;
     background: rgba(33, 56, 135, 0.06);
     border: 0;
-    font-style: normal;
     font-weight: 600;
     line-height: 100%; /* 14px */
     letter-spacing: -0.042rem;
@@ -152,21 +149,22 @@ p {
 .section-hero {
     background-image: url('/svg/bg1.svg');
     background-repeat: no-repeat; 
-    background-position-x: right;
-    background-position-y: center;
-    padding: 2rem 0 6.7rem 0;
+    background-position: bottom 50% right -20rem;
+    padding: 2rem 0 0 0;
+    min-height: 67rem;
 }
 
 .section-hero-h {
-
+    width: 40.4rem;
 }
 
 .section-hero-p {
-    
+    width: 20.6rem;
 }
 
 .section-hero-btn {
-    margin-top: 32.6rem;
+    align-self: flex-end;
+    margin-top: 35.7rem; 
 }
 
 .section-hero-svg {
@@ -302,10 +300,11 @@ p {
 }
 
 .section-clients-crds {
-    align-items: center !important;
+    align-content: center;
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
 }
@@ -373,16 +372,32 @@ p {
 }
 
 .section-form-prmsn {
-    display: inline-flex;
+
 }
 
 .section-form-permission {
     width: 1.8rem;
     height: 1.8rem;
+    opacity: 0;
 }
 
 .section-form-prmsn-lbl {
-    margin-left: 1rem;
+
+}
+
+.section-form-permission+label {
+    display: inline-flex;
+    align-items: center;
+    margin-left: -2.3rem;
+}
+
+.section-form-permission+label::before {
+    content: '';
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 2px solid #989EB1;
+    border-radius: 1.2rem;
+    margin-right: 1rem;
 }
 
 .section-form-btn {
