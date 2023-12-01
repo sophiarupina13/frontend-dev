@@ -1,0 +1,207 @@
+@font-face {
+    font-display: swap;
+    font-family: 'gilroyBold';
+    src: url(/fonts/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'gilroyLight';
+    src: url(/fonts/Gilroy-Light.otf);
+}
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    color: #142251;
+    --special-color: #989EB1;
+    font-style: normal;
+    font-family: 'gilroyLight';
+    font-weight: 400;
+    font-size: 62.5%;
+}
+
+body {
+    background: #FFF;
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 85%; /* 34px */
+    font-weight: 400;
+    letter-spacing: -0.16rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    display: block;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 85%; /* 34px */
+    font-weight: 400;
+    letter-spacing: -0.16rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 90%; /* 18px */
+    letter-spacing: -0.08rem;
+}
+
+a {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.056rem;
+    font-family: 'gilroyLight';
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: solid 1px #E0E2E8;
+}
+
+.wrapper {
+    display: none;
+}
+
+.menu {
+    border: none;
+    background-color:#FFF;
+    width: 2.5rem;
+    height: 0.9rem;
+}
+
+.menu-big {
+    display: none;
+}
+
+.logo {
+    width: 13.2rem;
+    height: 1.9rem;
+}
+
+.header-button {
+    display: none;
+}
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "links grafic";
+
+}
+
+.links{
+    padding-top: 1rem;
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.graf{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-area: grafic;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.largbocks{
+    grid-column: 1/-1;
+}
+
+.smallbocks{
+    grid-column: span 2;
+}
+
+.mediumbocks{
+    grid-column: span 3;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    padding-bottom: 3rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 1;
+    max-width: 100%;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.itemimg{
+    grid-column: -1/1;
+    grid-row-start: 1;
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.itema{
+    background-color: #989EB1;
+    padding: 10px 20px;
+    grid-column: -1/1;
+    grid-row-start: 1;
+}
+
+.footer {
+    border-top: solid 1px #E0E2E8;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer-politics {
+    width: 13.2rem;
+    color: var(--special-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 130%; /* 15.6px */
+    letter-spacing: -0.024rem;
+    text-decoration-line: underline;
+}
+
+.footer-designer {
+    width: 11.3rem;
+    color: #213887;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 130%; /* 15.6px */
+    letter-spacing: -0.024rem;
+    text-decoration-line: underline;
+}
+
+.footer-date {
+    color: var(--special-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 100%; /* 12px */
+    letter-spacing: -0.048rem;
+}

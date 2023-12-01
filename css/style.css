@@ -10,6 +10,13 @@
     src: url(/fonts/Gilroy-Light.otf);
 }
 
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
 :root {
     color: #142251;
     --special-color: #989EB1;
@@ -69,16 +76,28 @@ p {
     border-bottom: solid 1px #E0E2E8;
 }
 
-#menu {
+.wrapper {
+    display: none;
+}
+
+.menu {
     border: none;
     background-color:#FFF;
     width: 2.5rem;
     height: 0.9rem;
 }
 
-#logo {
+.menu-big {
+    display: none;
+}
+
+.logo {
     width: 13.2rem;
     height: 1.9rem;
+}
+
+.header-button {
+    display: none;
 }
 
 .gray {
@@ -207,6 +226,8 @@ p {
     background: #FFF;
     margin-right: 0.5rem;
     padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-services-pic {
@@ -229,12 +250,11 @@ p {
 }
 
 .section-services-block {
-    align-content: end;
+    flex-grow:  1;
 }
 
 .section-services-btn {
-    margin: 0 3rem 0 3rem;
-    align-self: flex-end;
+    margin: 0 3rem 3rem 3rem;
 }
 
 .section-services-plus {
@@ -288,7 +308,7 @@ p {
     background: #F3F6F9;
     border-radius: 3rem;
     margin: 5rem 0 2rem 0;
-    padding: 5rem 2rem 2rem 0;
+    padding: 5rem 0rem 2rem 0;
     background-image: url('/svg/graphic.svg');
     background-repeat: no-repeat; 
     background-position-x: right;
@@ -300,13 +320,13 @@ p {
 }
 
 .section-clients-crds {
-    align-content: center;
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center; 
+    grid-template-columns: max-content max-content;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
+    row-gap: 1.1rem;
+    column-gap: 1.1rem;
 }
 
 
@@ -410,6 +430,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .footer-politics {
@@ -438,4 +459,53 @@ p {
     font-weight: 600;
     line-height: 100%; /* 12px */
     letter-spacing: -0.048rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4.6rem 0;
+    }
+    .wrapper {
+        display: initial;
+    }
+    .menu-big {
+        display: flex;
+        column-gap: 3.4rem;
+    }
+    .menu-itms {
+        font-family: 'gilroyLight';
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 100%; /* 20px */
+        letter-spacing: -0.06rem;
+        color: #142251;
+        text-decoration-line: none;
+    }
+    .menu {
+        display: none;
+    }
+    .header-button {
+        display: flex;
+        width: 10.3em;
+        font-size: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        border: 0;
+        font-weight: 600;
+        line-height: 100%; /* 14px */
+        letter-spacing: -0.042rem;
+        color: #142251;
+        font-family: 'gilroyLight';
+        background-color: none;
+    }
+    .logo {
+        width: 24.3rem;
+        height: 3.3rem;
+    }
+    .container {
+        padding: 0 4.9rem;
+    }
 }
