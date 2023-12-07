@@ -31,12 +31,12 @@ body {
 }
 
 .container {
-    max-width: 144rem;
-    margin: 0 2rem;
+    padding: 0 2rem;
 }
 
 h1 {
-    font-size: 4rem;
+    /* font-size: 4rem; */
+    font-size: calc(32px + (68 + 68 * 0.7) * ((100vw - 320px) / 1920));
     line-height: 85%; /* 34px */
     font-weight: 400;
     letter-spacing: -0.16rem;
@@ -48,7 +48,7 @@ img {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: calc(32px + (68 + 68 * 0.7) * ((100vw - 320px) / 1920));
     line-height: 85%; /* 34px */
     font-weight: 400;
     letter-spacing: -0.16rem;
@@ -56,24 +56,35 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: calc(20px + (10 + 10  * 0.7) * ((100vw - 320px) / 1920));
     font-weight: 400;
     line-height: 90%; /* 18px */
     letter-spacing: -0.08rem;
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
     line-height: 100%; /* 14px */
     letter-spacing: -0.056rem;
     font-family: 'gilroyLight';
 }
 
+button {
+    font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
+}
+
+a {
+    font-size: calc(12px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
+}
+
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 2rem;
     border-bottom: solid 1px #E0E2E8;
+    position: sticky;
+    top: 0px;
+    background-color: #FFF;
 }
 
 .wrapper {
@@ -106,7 +117,7 @@ p {
 
 .gray1 {
     color: var(--special-color);
-    font-size: 1.4rem;
+    font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
     line-height: 100%; /* 14px */
     letter-spacing: -0.042rem;
     font-weight: 400;
@@ -123,15 +134,13 @@ p {
     background: rgba(33, 56, 135, 0.06);
     border: 0;
     font-weight: 600;
-    line-height: 100%; /* 14px */
-    letter-spacing: -0.042rem;
     color: #213887;
     font-family: 'gilroyLight';
 }
 
 .button2 {
     display: flex;
-    width: 27.5rem;
+    white-space: nowrap;
     height: 6rem;
     padding: 2.4rem 3rem;
     justify-content: space-between;
@@ -142,35 +151,25 @@ p {
     border: 0;
     color: #FFF;
     font-size: 1.4rem;
-    line-height: 100%; /* 14px */
-    letter-spacing: -0.042rem;
     font-family: 'gilroyLight';
-
 }
 
 .buttons {
-    height: 4rem;
-    padding: 1.3rem 2rem 1.3rem 2rem;
+    padding: 1.3rem 2rem;
     border-radius: 8.9rem;
     border: 1px solid;
     border-color: #142251;
     background-color: #F3F6F9;
     color: #142251;
-    font-size: 1.4rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 100%; /* 14px */
-    letter-spacing: -0.042rem;
     font-family: 'gilroyLight';
     white-space: nowrap;
+    font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
 }
 
 .section-hero {
-    background-image: url('/svg/bg1.svg');
-    background-repeat: no-repeat; 
-    background-position: bottom 50% right -20rem;
-    padding: 2rem 0 0 0;
-    min-height: 67rem;
+    padding-top: 2rem;
 }
 
 .section-hero-h {
@@ -181,28 +180,78 @@ p {
     width: 20.6rem;
 }
 
-.section-hero-btn {
-    align-self: flex-end;
-    margin-top: 35.7rem; 
+.section-hero-additions {
+    display: none;
 }
 
-.section-hero-svg {
-    width: 2.1rem;
-    height: 2.1rem;
+.section-hero-arrow {
+    width: 5.4rem;
+    height: 5.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F2F3F8;
+    border: none;
+    border-radius: 27rem;
+}
+
+.section-hero-cntcts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 2.4rem;
+    background-color: #F2F3F8;
+    width: 391px;
+    height: 54px;
+    border-radius: 2.7rem;
+}
+.section-hero-chat {
+    color: #142251;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.section-hero-mail {
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .section-services {
+    margin-top: 6.7rem;
     background: #F3F6F9;
     border-radius: 3rem;
     padding: 3rem 0 3rem 0;
-}
-
-.section-services-h {
-    
+    overflow: auto;
 }
 
 .section-services-p {
     margin-bottom: 2rem;
+}
+
+.section-services-arrow1 {
+    background-color: white;
+    border: none;
+    padding: 2.4rem;
+    border-radius: 2.4rem 0 0 2.4rem;
+}
+
+.section-services-arrows {
+    display: none;
+}
+
+.section-services-arrow2 {
+    background-color: white;
+    border: #E4E7F1;
+    padding: 2.4rem;
+    border-radius: 0 2.4rem 2.4rem 0;
+}
+
+.section-hero-img {
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+    margin-bottom: 0.5rem;
+    margin-top: -3rem;
 }
 
 .section-services-btns {
@@ -220,41 +269,44 @@ p {
 }
 
 .section-services-card {
-    height: 51.7rem;
     flex-shrink: 0;
     border-radius: 3rem;
     background: #FFF;
-    margin-right: 0.5rem;
-    padding: 1rem 0 0 0;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    max-width: 42.5rem;
+}
+
+.section-services-block {
+    flex-grow: 1;
 }
 
 .section-services-pic {
     width: 31.5rem;
-    height: 19.4rem;
-    margin: 0 1rem 0 1rem;
+}
+
+.section-services-itms {
+    padding: 0 2rem;
 }
 
 .section-services-h3 {
     margin-top: 3.1rem;
     margin-bottom: 3rem;
-}
-
-.section-services-itms {
-    padding-left: 3rem;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 .section-services-pp {
     margin-bottom: 1rem;
-}
-
-.section-services-block {
-    flex-grow:  1;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 
 .section-services-btn {
-    margin: 0 3rem 3rem 3rem;
+    margin: 2rem;
 }
 
 .section-services-plus {
@@ -334,20 +386,18 @@ p {
     border-radius: 2rem;
     background: #FFF;
     flex-shrink: 0;
-    width: 16.2rem;
-    height: 16rem;
+    width: calc(162px + (100 + 100 * 1.7) * ((100vw - 320px) / 1920));
+    height: calc(162px + (100 + 100 * 1.7) * ((100vw - 320px) / 1920));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 .section-clients-el-img {
     width: 7.2rem;
     height: 7.2rem;
-    margin-top: 1rem;
-    margin-left: 7.8rem;
-}
-
-.section-clients-h3 {
-    margin-left: 1.7rem;
-    margin-top: 4rem;
+    align-self: flex-end;
 }
 
 .section-clients-pic {
@@ -434,39 +484,102 @@ p {
 }
 
 .footer-politics {
-    width: 13.2rem;
     color: var(--special-color);
-    font-size: 1.2rem;
     font-weight: 600;
     line-height: 130%; /* 15.6px */
     letter-spacing: -0.024rem;
     text-decoration-line: underline;
+    width: 13.2rem;
 }
 
 .footer-designer {
-    width: 11.3rem;
     color: #213887;
-    font-size: 1.2rem;
     font-weight: 600;
     line-height: 130%; /* 15.6px */
     letter-spacing: -0.024rem;
     text-decoration-line: underline;
+    width: 11.3rem;
 }
 
 .footer-date {
     color: var(--special-color);
-    font-size: 1.2rem;
     font-weight: 600;
     line-height: 100%; /* 12px */
     letter-spacing: -0.048rem;
+    font-size: calc(12px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
 }
 
-@media screen and (min-width: 1200px) {
-    .header {
+@media screen and (min-width: 500px) {
+    .section-hero-p {
+        width: 448px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .section-clients-el {
+        padding: 2rem;
+    }
+    .section-clients-h3 {
+        font-weight: 600;
+    }
+    .button2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .section-services-h3 {
+        font-size: 3.4rem;
+    }
+    
+    .section-services-pp {
+        font-size: 1.7rem;
+    }
+    .section-services-pic {
+        width: 40.5rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    :root {
+        font-family: 'gilroyLight';
+        font-weight: 600;
+        line-height: 100%; /* 20px */
+        letter-spacing: -0.06rem;
+        color: #142251;
+        text-decoration-line: none;
+    }
+    .section-hero-svg {
+        width: 41px;
+        height: auto;
+    }
+    .button1 {
         display: flex;
-        align-items: center;
+        width: 36.1rem;
+        height: 8.9rem;
+        padding: 0 2.4rem;
+        font-size: 24px;
         justify-content: space-between;
-        padding: 4.6rem 0;
+        align-items: center;
+        border-radius: 1.2rem;
+        background: rgba(33, 56, 135, 0.06);
+        border: 0;
+        font-weight: 600;
+        line-height: 100%; /* 14px */
+        letter-spacing: -0.042rem;
+        color: #213887;
+        font-family: 'gilroyLight';
+    }
+    .header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        border-bottom: solid 1px #E0E2E8;
+        position: sticky;
+        top: 0px;
+        background-color: #FFF;
+        height: 10.8rem;
     }
     .wrapper {
         display: initial;
@@ -497,9 +610,9 @@ p {
         font-weight: 600;
         line-height: 100%; /* 14px */
         letter-spacing: -0.042rem;
-        color: #142251;
+        color: #213887;
         font-family: 'gilroyLight';
-        background-color: none;
+        background-color: white;
     }
     .logo {
         width: 24.3rem;
@@ -507,5 +620,66 @@ p {
     }
     .container {
         padding: 0 4.9rem;
+    }
+    .section-hero {
+        padding-top: 7rem;
+        padding-bottom: 10.8rem;
+    }
+    .section-hero-btn {
+        margin-top: -60rem;
+    }
+    .section-hero-division {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .section-hero-img {
+        position: relative;
+        top: -16rem;
+    }
+    .section-hero-additions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27.6rem;
+    }
+    .section-clients-el {
+        padding: 2rem 2rem 4.4rem 4.4rem;
+    }
+    .section-clients-el {
+        width: 43.8rem;
+        height: 43.8rem;
+    }
+    .section-services {
+        padding: 10rem 0 6rem 0;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 100px;
+    }
+    h3 {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 30px;
+    }
+    .gray1 {
+        font-size: 30px;
+    }
+    .buttons {
+        display: none;
+    }
+    .section-services-part {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .section-services-arrows {
+        display: initial;
     }
 }
