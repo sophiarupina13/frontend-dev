@@ -31,8 +31,7 @@ body {
 }
 
 .container {
-    max-width: 144rem;
-    margin: 0 2rem;
+    padding: 0 2rem;
 }
 
 h1 {
@@ -76,8 +75,12 @@ p {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 2rem;
     border-bottom: solid 1px #E0E2E8;
+    position: sticky;
+    top: 0px;
+    background-color: #FFF;
+    z-index: 1;
 }
 
 .wrapper {

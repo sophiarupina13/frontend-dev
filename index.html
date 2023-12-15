@@ -11,7 +11,7 @@
 
 <body>
     <header class="header container">
-        <a href=""><img src="/svg/logo.svg" alt="logo" class="logo"></a>
+        <a href="grid.html"><img src="/svg/logo.svg" alt="logo" class="logo"></a>
         <div class="wrapper">
             <nav>
                 <ul class="menu-big">
@@ -53,9 +53,10 @@
                 <div class="section-hero-additions">
                     <button class="section-hero-arrow"><img src="/svg/arrow-down.svg"alt=""></button>
                     <div class="section-hero-cntcts">
-                        <img src="svg/whatsapp.svg" alt="">
-                        <p class="section-hero-chat">открыть чат</p>
-                        <p class="section-hero-mail">adrasteia@mail.com</p>
+                        <img src="svg/whatsapp.svg" alt="" class="cnct">
+                        <p class="section-hero-chat" class="cnct">открыть чат</p>
+                        <img src="/svg/separator.svg" alt="" class="cnct">
+                        <p class="section-hero-mail" class="cnct">adrasteia@mail.com</p>
                     </div>
                 </div>
             </div>
@@ -257,26 +258,47 @@
         </section>
         <section class="section-form">
             <div class="container">
-                <h2 class="section-form-h">Связаться <br>с нами</h2>
-                <form class="section-form-f">
-                    <label for="name" class="section-form-lbl">Меня зовут</label>
-                    <input class="section-form-inpt" value="Караникола Евгений" type="text" name="name" id="name" required>
-                    <label for="email" class="section-form-lbl">Мой email</label>
-                    <input class="section-form-inpt" value="example@mail.ru" type="text" name="email" id="email" required>
-                    <label for="number" class="section-form-lbl">Мой номер</label>
-                    <input class="section-form-inpt" value="+7 (___)___-____." type="text" name="number" id="number" required>
-                    <div class="section-form-prmsn">
-                        <input type="checkbox" checked class="section-form-permission">
-                        <label for="permission" class="gray1 section-form-prmsn-lbl">Согласие на обработку <br>персональных данных</label>
+                <h2 class="section-form-h">Связаться с нами</h2>
+                <form class="section-form-f" action="httpbin.org">
+                    <div class="section-form-separate">
+                        <label for="name" class="section-form-lbl">Меня зовут</label>
+                        <input class="section-form-inpt" value="Караникола Евгений" type="text" name="name" id="name" required>
                     </div>
-                    <!-- <img src="/svg/permission.svg" alt="permission" class="section-form-svg"> -->
-                    <button type="submit" class="button1 section-form-btn">Оформить заявку<img src="/svg/plus.svg" alt="" width="21" height="21"></button>
+                    <div class="section-form-separate">
+                        <label for="email" class="section-form-lbl">Мой email</label>
+                        <input class="section-form-inpt" value="example@mail.ru" type="text" name="email" id="email" required>
+                    </div>
+                    <div class="section-form-separate">
+                        <label for="number" class="section-form-lbl">Мой номер</label>
+                        <input class="section-form-inpt" value="+7 (___)___-____." type="text" name="number" id="number" required>
+                    </div>
+                    <div class="section-form-separate">
+                        <div class="section-form-prmsn section-form-separate">
+                            <img src="/svg/permission.svg" alt="permission" class="section-form-svg">
+                            <input type="checkbox" checked class="section-form-permission">
+                            <label for="permission" class="section-form-prmsn-lbl ">Согласие на обработку <br>персональных данных</label>
+                        </div>
+                        <button type="submit" class="button1 section-form-btn">Оформить заявку<img src="/svg/plus.svg" alt=""></button>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
     <footer class="container">
         <div class="footer">
+            <div class="footer-cntcts">
+                <div class="footer-separate">
+                    <img src="/svg/whatsapp.svg" class="footer-img" alt="">
+                    <a href="" class="footer-a">whatsapp</a>
+                </div>
+                <div class="footer-separate">
+                    <img src="/svg/telegram.svg" class="footer-img" alt="">
+                    <a href="" class="footer-a">telegram</a>
+                </div>
+                <div class="footer-separate">
+                    <a href="" class="footer-a">adrasteia@mail.com</a>
+                </div>
+            </div>
             <a href="" class="footer-politics">Политика конфиденциальности</a>
             <a href="" class="footer-designer">Дизайн и разработка - Karanikola</a>
             <p class="footer-date">© 2022</p>
