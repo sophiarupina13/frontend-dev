@@ -1,0 +1,9 @@
+#footer-logo:hover{
+    transform: rotate(30deg) scale(1.5) skewX(1deg) skewY(1deg);
+}
+
+.necessary::after {
+    content: '*';
+    margin-left: 5px;
+    color: brown;
+}
