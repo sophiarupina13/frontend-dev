@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/grid.html"
+    "livePreview.defaultPreviewPath": "/grid.html",
+    "liveServer.settings.port": 5501
 }

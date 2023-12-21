@@ -11,36 +11,36 @@
 
 <body>
     <header class="header container">
-        <a href="grid.html"><img src="/svg/logo.svg" alt="logo" class="logo"></a>
+        <a href="grid.html" title="На главную" class="logo sr-only"><img src="/svg/logo.svg" alt="logo"></a>
         <div class="wrapper">
             <nav>
                 <ul class="menu-big">
                     <li>
-                        <a href="#" class="menu-itms">Главный</a>
+                        <a href="#hero" class="menu-itms">Главный</a>
                     </li>
                     <li>
-                        <a href="#" class="menu-itms">О нас</a>
+                        <a href="#work" class="menu-itms">О нас</a>
                     </li>
                     <li>
-                        <a href="#" class="menu-itms">Услуги</a>
+                        <a href="#services" class="menu-itms">Услуги</a>
                     </li>
                     <li>
-                        <a href="#" class="menu-itms">Как мы работаем</a>
+                        <a href="#work" class="menu-itms">Как мы работаем</a>
                     </li>
                     <li>
-                        <a href="#" class="menu-itms">Клиенты</a>
+                        <a href="#clients" class="menu-itms">Клиенты</a>
                     </li>
                     <li>
-                        <a href="#" class="menu-itms">Контакты</a>
+                        <a href="#contacts" class="menu-itms">Контакты</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <button class="header-button">Оформить заявку<img src="/svg/plus.svg" alt=""></button>
-        <button class="menu"><img src="/svg/menu.svg" alt=""></button>
+        <a class="header-a" href="form.html">Оформить заявку<img src="/svg/plus.svg" alt=""></a>
+        <button class="menu" title="Открыть меню"><img src="/svg/menu.svg" alt=""></button>
     </header>
     <main>
-        <section class="section-hero">
+        <section class="section-hero" id="hero">
             <div class="container">
                 <div class="section-hero-division">
                     <div class="">
@@ -49,19 +49,19 @@
                     </div>
                     <img src="/pics/bg1.png" alt="" class="section-hero-img">
                 </div>
-                <button class="button1 section-hero-btn">Оформить заявку<img src="/svg/plus.svg" class="section-hero-svg" alt=""></button>
+                <button class="button1 section-hero-btn" title="Оформить заявку">Оформить заявку<img src="/svg/plus.svg" class="section-hero-svg" alt=""></button>
                 <div class="section-hero-additions">
                     <button class="section-hero-arrow"><img src="/svg/arrow-down.svg"alt=""></button>
                     <div class="section-hero-cntcts">
                         <img src="svg/whatsapp.svg" alt="" class="cnct">
-                        <p class="section-hero-chat" class="cnct">открыть чат</p>
+                        <a class="section-hero-chat" class="cnct">открыть чат</a>
                         <img src="/svg/separator.svg" alt="" class="cnct">
-                        <p class="section-hero-mail" class="cnct">adrasteia@mail.com</p>
+                        <a class="section-hero-mail" class="cnct">adrasteia@mail.com</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-services">
+        <section class="section-services" id="services">
             <div class="container">
                 <div class="section-services-part">
                     <h2 class="section-services-h">Услуги</h2>
@@ -73,16 +73,16 @@
                 </div>
                 <ul class="section-services-btns">
                     <li class="services-list-item">
-                        <button class="buttons">Работа с информацией</button>
+                        <button class="buttons" title="Работа с информацией">Работа с информацией</button>
                     </li>
                     <li class="services-list-item">
-                        <button class="buttons">Розыск</button>
+                        <button class="buttons" title="Розыск">Розыск</button>
                     </li>
                     <li class="services-list-item">
-                        <button class="buttons">Слежка и наблюдение</button>
+                        <button class="buttons" title="Слежка и наблюдение">Слежка и наблюдение</button>
                     </li>
                     <li class="services-list-item">
-                        <button class="buttons">Бизнес-разведка</button>
+                        <button class="buttons" title="Бизнес-разведка">Бизнес-разведка</button>
                     </li> 
                 </ul>
                 <div class="section-services-cards">
@@ -107,7 +107,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="button2 section-services-btn">Оформить заявку<img src="/svg/plus1.svg" alt="" class="section-services-plus"></button>
+                        <button class="button2 section-services-btn" title="Оформить заявку">Оформить заявку<img src="/svg/plus1.svg" alt="" class="section-services-plus"></button>
                     </div>
                     <div class="section-services-card">
                         <div class="section-services-block">
@@ -130,7 +130,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="button2 section-services-btn">Оформить заявку<img src="/svg/plus1.svg" alt="" class="section-services-plus"></button>
+                        <button class="button2 section-services-btn" title="Оформить заявку">Оформить заявку<img src="/svg/plus1.svg" alt="" class="section-services-plus"></button>
                     </div>
                     <div class="section-services-card">
                         <div class="section-services-block">
@@ -150,7 +150,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="button2 section-services-btn">Оформить заявку<img src="/svg/plus1.svg" alt="" class="section-services-plus"></button>
+                        <button class="button2 section-services-btn" title="Оформить заявку">Оформить заявку<img src="/svg/plus1.svg" alt="" class="section-services-plus"></button>
                     </div>
                     <div class="section-services-card">
                         <div class="section-services-block">
@@ -173,34 +173,37 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="button2 section-services-btn">Оформить заявку<img src="/svg/plus1.svg" class="section-services-plus" alt=""></button>
+                        <button class="button2 section-services-btn"  title="Оформить заявку">Оформить заявку<img src="/svg/plus1.svg" class="section-services-plus" alt=""></button>
                     </div>
-                    <div class="section-services-card">
-                        <div class="section-services-block">
-                            <img src="/svg/pic2.svg" alt="pic" class="section-services-pic">
-                            <div class="section-services-itms">
-                                <h3 class="section-services-h3">Работа<br> с информацией</h3>
-                                <ul>
-                                    <li class="section-services-l">
-                                        <p class="section-services-pp">- Поиск и проверка информации</p>
-                                    </li>
-                                    <li class="section-services-l">
-                                        <p class="section-services-pp">- Составление персонального досье</p>
-                                    </li>
-                                    <li class="section-services-l">
-                                        <p class="section-services-pp">- Работа с репутацией <br>(защита персональных данных)</p>
-                                    </li>
-                                    <li class="section-services-l">
-                                        <p class="section-services-pp">- Информация по номеру телефона</p>
-                                    </li>
-                                </ul>
+                    <div class="section-services-card" id="section-services-card">
+                        <div class="section-services-block" id="loader">
+                            <div class="loader"></div>
+                            <div class="after-loading">
+                                <img src="/svg/pic2.svg" alt="pic" class="section-services-pic">
+                                <div class="section-services-itms">
+                                    <h3 class="section-services-h3">Работа<br> с информацией</h3>
+                                    <ul>
+                                        <li class="section-services-l">
+                                            <p class="section-services-pp">- Поиск и проверка информации</p>
+                                        </li>
+                                        <li class="section-services-l">
+                                            <p class="section-services-pp">- Составление персонального досье</p>
+                                        </li>
+                                        <li class="section-services-l">
+                                            <p class="section-services-pp">- Работа с репутацией <br>(защита персональных данных)</p>
+                                        </li>
+                                        <li class="section-services-l">
+                                            <p class="section-services-pp">- Информация по номеру телефона</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <button class="button2 section-services-btn">Оформить заявку<img src="/svg/plus1.svg" alt="" class="section-services-plus"></button>
+                        <button class="button2 section-services-btn" title="Оформить заявку">Оформить заявку<img src="/svg/plus1.svg" alt="" class="section-services-plus"></button>
                     </div>
             </div>
         </section>
-        <section class="section-work">
+        <section class="section-work" id="work">
             <div class="container">
                 <h2 class="section-work-h">Как мы работаем</h2>
                 <ol class="section-work-list">
@@ -232,7 +235,7 @@
                 <img src="/svg/work-img.svg" alt="" class="section-work-img">
             </div>
         </section>
-        <section class="section-clients">
+        <section class="section-clients" id="clients">
             <div class="container section-clients-container">
                 <h2 class="section-clients-h">Наши клиенты</h2>
                 <p class="gray1 section-clients-p">Строго соблюдаем конфиденциальность <br>и дорожим репутацией каждого клиента</p>
@@ -256,53 +259,46 @@
                 </ul>
             </div>
         </section>
-        <section class="section-form">
+        <section class="section-form" id="form">
             <div class="container">
                 <h2 class="section-form-h">Связаться с нами</h2>
                 <form class="section-form-f" action="httpbin.org">
                     <div class="section-form-separate">
                         <label for="name" class="section-form-lbl">Меня зовут</label>
-                        <input class="section-form-inpt" value="Караникола Евгений" type="text" name="name" id="name" required>
+                        <input class="section-form-inpt" placeholder="Караникола Евгений" type="text" name="name" id="name" required>
                     </div>
                     <div class="section-form-separate">
                         <label for="email" class="section-form-lbl">Мой email</label>
-                        <input class="section-form-inpt" value="example@mail.ru" type="text" name="email" id="email" required>
+                        <input class="section-form-inpt" placeholder="example@mail.ru" type="text" name="email" id="email" required>
                     </div>
                     <div class="section-form-separate">
                         <label for="number" class="section-form-lbl">Мой номер</label>
-                        <input class="section-form-inpt" value="+7 (___)___-____." type="text" name="number" id="number" required>
+                        <input class="section-form-inpt" placeholder="+7 (___)___-____." type="text" name="number" id="number" required>
                     </div>
                     <div class="section-form-separate">
                         <div class="section-form-prmsn section-form-separate">
                             <img src="/svg/permission.svg" alt="permission" class="section-form-svg">
-                            <input type="checkbox" checked class="section-form-permission">
-                            <label for="permission" class="section-form-prmsn-lbl ">Согласие на обработку <br>персональных данных</label>
+                            <label for="permission" class="section-form-prmsn-lbl">Согласие на обработку <br>персональных данных
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
-                        <button type="submit" class="button1 section-form-btn">Оформить заявку<img src="/svg/plus.svg" alt=""></button>
+                        <button type="submit" class="button1 section-form-btn" title="Оформить заявку">Оформить заявку<img src="/svg/plus.svg" alt=""></button>
                     </div>
                 </form>
             </div>
         </section>
     </main>
     <footer class="container">
-        <div class="footer">
+        <div class="footer" id="contacts">
             <div class="footer-cntcts">
-                <div class="footer-separate">
-                    <img src="/svg/whatsapp.svg" class="footer-img" alt="">
-                    <a href="" class="footer-a">whatsapp</a>
-                </div>
-                <div class="footer-separate">
-                    <img src="/svg/telegram.svg" class="footer-img" alt="">
-                    <a href="" class="footer-a">telegram</a>
-                </div>
-                <div class="footer-separate">
-                    <a href="" class="footer-a">adrasteia@mail.com</a>
-                </div>
+                    <a href="" class="footer-a" title="whatsapp"><img src="/svg/whatsapp.svg" class="footer-img" alt="whatsapp">whatsapp</a>
+                    <a href="" class="footer-a" title="telegram"><img src="/svg/telegram.svg" class="footer-img" alt="telegram">telegram</a>
+                    <a href="" class="footer-a" title="Написать на почту">adrasteia@mail.com</a>
             </div>
-            <a href="" class="footer-politics">Политика конфиденциальности</a>
-            <a href="" class="footer-designer">Дизайн и разработка - Karanikola</a>
+            <a href="" class="footer-politics" title="Политика конфиденциальности">Политика конфиденциальности</a>
+            <a href="" class="footer-designer" title="Дизайн и разработка - Karanikola">Дизайн и разработка - Karanikola</a>
             <p class="footer-date">© 2022</p>
-            <!-- <a href="grid.html">grid</a> -->
         </div>
     </footer>
 </body>
