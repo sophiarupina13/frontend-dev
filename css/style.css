@@ -84,7 +84,6 @@ a {
 
 a:hover{
     transform: scale(1.05, 1.05);
-    transform: rotate(3deg);
     background-color: #bcd5e9;
 }
 
@@ -130,7 +129,6 @@ a:active{
 
 .menu:hover{
     transform: scale(1.1, 1.1);
-    transform: rotate(5deg);
     background-color: #bcd5e9;
 }  
 
@@ -145,7 +143,6 @@ a:active{
 
 .logo:hover{
     transform: scale(1.1, 1.1);
-    transform: rotate(2deg);
     background-color: #bcd5e9;
 }
 
@@ -220,7 +217,6 @@ a:active{
 
 .button1:hover {
     transform: scale(1.03, 1.03);
-    transform: rotate(3deg);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
 }
 
@@ -230,7 +226,6 @@ a:active{
 
 .button2:hover {
     transform: scale(1.03, 1.03);
-    transform: rotate(3deg);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
 }
 
@@ -240,7 +235,6 @@ a:active{
 
 .buttons:hover {
     transform: scale(1.03, 1.03);
-    transform: rotate(2deg);
     background-color: #142251;
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
@@ -275,7 +269,6 @@ a:active{
 
 .section-hero-arrow:hover {
     transform: scale(1.1, 1.1);
-    transform: rotate(2deg);
     background-color: #bcd5e9;
 }
 
@@ -478,14 +471,6 @@ a:active{
     margin-bottom: 1rem;
     padding-bottom: 1.4rem;
     max-width: 45.4rem;
-}
-
-.section-work-list-item:nth-child(odd) {
-    background-color: #f7f7f7fa;
-}
-
-.section-work-list-item:nth-child(even) {
-    background-color: #FFF;
 }
 
 .section-work-img {
@@ -745,7 +730,6 @@ a:active{
 
 .footer a:hover{
     transform: scale(1.05, 1.05);
-    transform: rotate(3deg);
     background-color: #bcd5e9;
 }
 
@@ -875,7 +859,6 @@ a:active{
     }
     .button1:hover{
         transform: scale(1.03, 1.03);
-        transform: rotate(3deg);
     }
     .button2 {
         padding: 3rem 3rem;
@@ -1048,7 +1031,6 @@ a:active{
     }
     .header-a:hover{
         transform: scale(1.05, 1.05);
-        transform: rotate(3deg);
         background-color: #bcd5e9;
     }
     .buttons {
